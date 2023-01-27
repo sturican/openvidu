@@ -1427,7 +1427,8 @@ export class Session extends EventDispatcher {
             platform.isAndroidBrowser() ||
             platform.isSamsungBrowser() ||
             platform.isIonicAndroid() ||
-            platform.isIOSWithSafari()
+            platform.isIOSWithSafari() ||
+			platform.isYandexBrowser()
         ) {
             const obtainAndSendVideo = async () => {
                 const pc = streamManager.stream.getRTCPeerConnection();
