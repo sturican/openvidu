@@ -15,6 +15,10 @@ export class PlatformUtils {
         return platform.name === 'Chrome';
     }
 
+	public isYandexBrowser(): boolean {
+        return platform.name === 'Yandex Browser';
+    }
+
     /**
      * @hidden
      */
@@ -168,7 +172,8 @@ export class PlatformUtils {
             this.isSamsungBrowser() ||
             this.isIonicAndroid() ||
             this.isIonicIos() ||
-            this.isElectron()
+            this.isElectron() ||
+			this.isYandexBrowser()
         );
     }
 
@@ -183,6 +188,7 @@ export class PlatformUtils {
         }
         return (
             this.isChromeBrowser() ||
+			this.isYandexBrowser() ||
             this.isFirefoxBrowser() ||
             this.isOperaBrowser() ||
             this.isElectron() ||

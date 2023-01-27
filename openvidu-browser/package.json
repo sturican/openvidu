@@ -34,10 +34,10 @@
     }, 
     "license": "Apache-2.0", 
     "main": "lib/index.js", 
-    "name": "openvidu-browser", 
+    "name": "@clickon/openvidu-browser", 
     "repository": {
         "type": "git", 
-        "url": "git://github.com/OpenVidu/openvidu"
+        "url": "git@git.clickon.pro:clickon/npm/openvidu-browser.git"
     }, 
     "scripts": {
         "browserify": "VERSION=${VERSION:-dev}; mkdir -p static/js/ && cd src && ../node_modules/browserify/bin/cmd.js Main.ts -p [ tsify ] --exclude kurento-browser-extensions --debug -o ../static/js/openvidu-browser-$VERSION.js -v", 
@@ -53,5 +53,5 @@
             ]
         }
     }, 
-    "version": "2.23.0"
+    "version": "2.23.0-clickon.2"
 }
